@@ -1,0 +1,5 @@
+services:
+  - name: backend
+    env: python
+    buildCommand: pip install git+https://github.com/JaidedAI/EasyOCR.git&&pip install -r requirements.txt
+    startCommand: python index.py
